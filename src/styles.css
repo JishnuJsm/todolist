@@ -1,0 +1,323 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  min-height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+Nav {
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+Nav div {
+  gap: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+Nav div p {
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+Main {
+  margin: 15px 0;
+}
+
+.button {
+  font-weight: bold;
+  width: 75px;
+  max-height: 30px;
+  cursor: pointer;
+  padding: 7px;
+  border-radius: 5px;
+  border: 0;
+  margin: 0 5px 0 10px;
+}
+
+.button:hover {
+  transition-duration: 0.2s;
+}
+
+Form {
+  margin: 20px 0;
+}
+
+.form input {
+  padding: 7px;
+  border: 0;
+  outline: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0.5px grey;
+}
+
+select {
+  width: 100px;
+  height: 35px;
+  padding: 0 7px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: wheat;
+  border: 0;
+  outline: 0;
+}
+
+select:hover {
+  box-shadow: 0 0 5px 2px grey;
+}
+
+.listContainer {
+  margin: 20px 0;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 15px;
+  padding: 10px 0;
+  max-width: 100vw;
+  text-align: left;
+}
+
+li div {
+  display: flex;
+  position: absolute;
+  right: 30px;
+}
+
+li form {
+  margin: 0;
+}
+
+li form input {
+  border: 0;
+  outline: 0;
+}
+
+.fav {
+  color: burlywood;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.flagged {
+  color: burlywood;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 650px) {
+  .todoActivity {
+    width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+/* loginpage */
+
+.loginpage {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.formContainer {
+  width: 350px;
+  height: 75vh;
+  border: none;
+  border-radius: 10px;
+  background-color: #333;
+}
+
+.formdiv {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backdrop-filter: blur(50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formtitlediv {
+  width: 100%;
+  padding-top: 30px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.formtitle {
+  color: wheat;
+  cursor: pointer;
+}
+
+.formfooter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.inputdiv {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.formlabel {
+  margin: 0 5%;
+  display: block;
+  font-size: 0.8rem;
+  color: #ccc;
+  font-weight: bold;
+}
+
+.forminput {
+  width: 90%;
+  padding: 10px 5px;
+  margin: 0 5%;
+  border: 0;
+  outline: 0;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: transparent;
+  border-bottom: 1px solid black;
+  color: wheat;
+}
+
+.forminput::placeholder {
+  color: wheat;
+  opacity: 0.75;
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+
+.forminput:focus::placeholder {
+  color: transparent;
+}
+
+.loginButton {
+  width: 100px;
+  height: 25px;
+  font-size: 1rem;
+  border: 0;
+  border-radius: 5px;
+  font-weight: bold;
+  color: whitesmoke;
+  background-color: coral;
+  cursor: pointer;
+}
+
+.errortab {
+  color: red;
+  font-weight: bold;
+  position: relative;
+  top: 10px;
+}
+
+.errortab p:before {
+  content: "* ";
+}
+
+.errortab p:after {
+  content: " *";
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 22px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #555;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: wheat;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: coral;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px coral;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
